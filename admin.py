@@ -5,6 +5,3 @@ class Admin(User):
       super().__init__(id, username, password, name, surname)
 
       self.is_admin = True
-
-
-   # def delete_user(self, user):

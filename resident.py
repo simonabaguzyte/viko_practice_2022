@@ -4,5 +4,5 @@ class Resident(User):
    def __init__(self, id, username, password, name, surname):
       super().__init__(self, id, username, password, name, surname)
 
-      is_admin = False
+      self.is_resident = True
       
