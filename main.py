@@ -34,7 +34,7 @@ def open_admin_home_window():
          sg.Button("Log out")
       ]
    ]
-   return sg.Window(title="PORTAL 3", layout=layout)
+   return sg.Window(title="PORTAL 2", layout=layout)
 
 # ===========================
 # MANAGERS
@@ -48,7 +48,7 @@ def open_manager_home_window():
          sg.Button("Log out")
       ]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 14", size=(300, 100), layout=layout)
 
 def open_admin_manager_window(managers):
    layout = [
@@ -60,7 +60,7 @@ def open_admin_manager_window(managers):
       ],
       [sg.Button("Add manager"), sg.Button("Delete manager"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 13", layout=layout)
+   return sg.Window(title="PORTAL 12", layout=layout)
 
 def open_create_manager_window():
    layout = [
@@ -70,7 +70,7 @@ def open_create_manager_window():
       [sg.Text("and last name to be the password.")],
       [sg.Button("Create manager"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 14", layout=layout)
+   return sg.Window(title="PORTAL 13", layout=layout)
 
 # ===========================
 # COMMUNITIES
@@ -88,7 +88,7 @@ def open_admin_communities_window(communities):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL 4", layout=layout)
+   return sg.Window(title="PORTAL 3", layout=layout)
 
 def open_manager_communities_window(communities):
    layout = [
@@ -99,7 +99,7 @@ def open_manager_communities_window(communities):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 15", layout=layout)
 
 def open_resident_community_window(community):
    layout = [
@@ -110,7 +110,7 @@ def open_resident_community_window(community):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 19", layout=layout)
 
 def open_add_community_window():
    layout = [
@@ -119,7 +119,7 @@ def open_add_community_window():
       [sg.Text("City"), sg.InputText(key="city")],
       [sg.Button("Create community"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 5", layout=layout)
+   return sg.Window(title="PORTAL 4", layout=layout)
    
 def open_add_service_to_community_window(services):
    layout = [
@@ -131,7 +131,7 @@ def open_add_service_to_community_window(services):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL 6", layout=layout)
+   return sg.Window(title="PORTAL 5", layout=layout)
 
 def open_not_linked_services_window(services):
    layout = [
@@ -154,7 +154,7 @@ def open_assign_resident_to_community_window(residents):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL 9", layout=layout)
+   return sg.Window(title="PORTAL 7", layout=layout)
 
 # ===========================
 # SERVICES
@@ -171,14 +171,14 @@ def open_services_window(services):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL 11", layout=layout)
+   return sg.Window(title="PORTAL 9", layout=layout)
 
 def open_add_service_window():
    layout = [
       [sg.Text("Service name"), sg.InputText(key="service_name")],
       [sg.Button("Create service"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 12", layout=layout)
+   return sg.Window(title="PORTAL 10", layout=layout)
 
 def open_assign_service_manager_window(managers):
    layout = [
@@ -186,7 +186,7 @@ def open_assign_service_manager_window(managers):
       [sg.Listbox(values=managers, size=(30, len(managers)), key="managers")],
       [sg.Button("Assign manager"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 8", layout=layout)
+   return sg.Window(title="PORTAL 11", layout=layout)
 
 def open_manager_services_window(services):
    layout = [
@@ -197,7 +197,7 @@ def open_manager_services_window(services):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 16", layout=layout)
 
 def open_manager_service_price_window():
    layout = [
@@ -205,7 +205,7 @@ def open_manager_service_price_window():
       [sg.Text("Price"), sg.InputText(key="price")],
       [sg.Button("Change service price"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 16", layout=layout)
+   return sg.Window(title="PORTAL 17", layout=layout)
 
 def open_resident_services_window(services):
    layout = [
@@ -216,7 +216,7 @@ def open_resident_services_window(services):
          sg.Button("Cancel")
       ]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 20", layout=layout)
 
 # ===========================
 # RESIDENTS
@@ -227,7 +227,7 @@ def open_resident_home_window():
       [sg.Text("Choose:")],
       [sg.Button("Communities"), sg.Button("Log out")]
    ]
-   return sg.Window(title="PORTAL X", layout=layout)
+   return sg.Window(title="PORTAL 18", size=(300, 100), layout=layout)
 
 def open_create_resident_window():
    layout = [
@@ -237,7 +237,7 @@ def open_create_resident_window():
       [sg.Text("and last name to be the password.")],
       [sg.Button("Create resident"), sg.Button("Cancel")]
    ]
-   return sg.Window(title="PORTAL 10", layout=layout)
+   return sg.Window(title="PORTAL 8", layout=layout)
 
 # ===========================
 # DB OPERATIONS
